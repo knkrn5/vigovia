@@ -1,0 +1,4 @@
+/* Global overrides that complement Tailwind utility classes */
+.app-shell {
+  min-height: 100vh;
+}
