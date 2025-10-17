@@ -43,7 +43,7 @@ export const ItineraryForm = ({ data, onChange }: ItineraryFormProps) => {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 ">
       <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
         <SectionHeading title="Trip Overview" description="Key trip details shown in the hero banner." />
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -271,7 +271,7 @@ const DaysSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading
           title="Daily Schedule"
@@ -432,7 +432,7 @@ const FlightsSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Flight Summary" description="Update flight legs and notes." />
         <button
@@ -522,7 +522,7 @@ const HotelsSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Hotel Bookings" description="Control the hotel table entries." />
         <button
@@ -614,7 +614,7 @@ const NotesSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Important Notes" description="Edit fine-print policies and reminders." />
         <button
@@ -687,7 +687,7 @@ const ServicesSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Scope of Service" description="Control delivery promises and support details." />
         <button
@@ -762,7 +762,7 @@ const InclusionsSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Inclusion Summary" description="Edit inclusions or exclusions." />
         <button
@@ -851,7 +851,7 @@ const ActivitiesSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <SectionHeading title="Activity Table" description="Manage the city-wise activity reference table." />
         <button
@@ -958,7 +958,7 @@ const PaymentSection = ({ data, updateItinerary }: SectionProps) => {
   }
 
   return (
-    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+    <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
       <SectionHeading
         title="Payment Plan"
         description="Configure total amount, TCS information, and installment schedule."
@@ -1060,7 +1060,7 @@ const PaymentSection = ({ data, updateItinerary }: SectionProps) => {
 }
 
 const VisaSection = ({ data, updateItinerary }: SectionProps) => (
-  <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+  <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
     <SectionHeading title="Visa Details" description="Update visa information block." />
     <div className="mt-4 grid gap-4 sm:grid-cols-3">
       <FieldLabel label="Visa Type">
@@ -1104,7 +1104,7 @@ const VisaSection = ({ data, updateItinerary }: SectionProps) => (
 )
 
 const ContactSection = ({ data, updateItinerary }: SectionProps) => (
-  <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+  <section className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur max-h-screen overflow-y-auto">
     <SectionHeading title="Contact & Footer" description="Company details displayed in the footer." />
     <div className="mt-4 grid gap-4 md:grid-cols-2">
       <FieldLabel label="Company Name">
